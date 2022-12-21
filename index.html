@@ -3,15 +3,16 @@
     <head>
         <link rel="manifest" href="/web-sdk-test/manifest.json">
         <script type="text/javascript">
-            var clevertap = { event: [], profile: [], account: [], region: 'in1' };
-             clevertap.account.push({ id: "8W4-9R9-WW6Z" });
+            var clevertap = { event: [], profile: [], account: [], region: 'sk1-staging-4' };
+             clevertap.account.push({ id: "WRK-485-456Z" });
             //clevertap.account.push({ id: "R99-655-K75Z" });
             (function() {
                 var wzrk = document.createElement("script");
                 wzrk.type = "text/javascript";
                 wzrk.async = true;
                 //wzrk.src = "a.js";
-                wzrk.src = "web_personalization_new_sdk";
+                //wzrk.src = "web_personalization_new_sdk";
+		    wzrk.src = "https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2454/carousel_height_fix/clevertap.js";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(wzrk, s);
             })();
