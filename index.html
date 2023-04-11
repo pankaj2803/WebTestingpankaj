@@ -3,9 +3,10 @@
     <head>
         <link rel="manifest" href="/web-sdk-test/manifest.json">
         <script type="text/javascript">
-            var clevertap = { event: [], profile: [], account: [], region: 'eu1' };
+		 var clevertap = { event: [], profile: [], account: [], region: 'sk1-staging-13' };
+           // var clevertap = { event: [], profile: [], account: [], region: 'eu1' };
              //clevertap.account.push({ id: "ZWW-WWW-WWRZ" }); // eu1 BR App 
-		clevertap.account.push({ id: "W9R-486-4W5Z" }); // CleverTapSample 
+		clevertap.account.push({ id: "65W-K79-676Z" }); // Shilpa account  
             //clevertap.account.push({ id: "R99-655-K75Z" });
             (function() {
                 var wzrk = document.createElement("script");
@@ -14,8 +15,8 @@
                 //wzrk.src = "a.js";
                 //wzrk.src = "web_personalization_new_sdk";
 		//    wzrk.src = "https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2454/carousel_height_fix/clevertap.js";
-		//    wzrk.src = 'https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2041/web_inbox/clevertap.js';
-		    wzrk.src = 'https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2678/frequency_caps/clevertap.js';
+		    wzrk.src = 'https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2041/web_inbox/clevertap.js';
+		//    wzrk.src = 'https://cdn.jsdelivr.net/gh/CleverTap/clevertap-web-sdk@task/SDK-2678/frequency_caps/clevertap.js';
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(wzrk, s);
             })();
